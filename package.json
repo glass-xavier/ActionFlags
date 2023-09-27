@@ -1,8 +1,8 @@
 {
   "name": "actionflags",
-  "productName": "actionflags",
+  "productName": "Action Flags!",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "A customizable keyframe timeline application.",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -18,7 +18,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "xel": "^0.23.0"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.4.2",
