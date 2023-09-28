@@ -1,5 +1,7 @@
 const { contextBridge, ipcRenderer } = require('electron')
 
 contextBridge.exposeInMainWorld('nodeAPI', {
-  writeFlagData: (file, data) => ipcRenderer.send('write-flag', data)
+  timerStart: (time) => ipcRenderer.send('timer-start', time),
+  sendFlag: (time) => ipcRenderer.send('flag', time),
+  timerStop: (time) => ipcRenderer.send('timer-stop', time)
 })
