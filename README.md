@@ -10,3 +10,11 @@ When the "Stop Flagging" button has been clicked, a final flag is recorded and t
 Flagging moments during a video recording that need to be reviewed during editing.
 
 This application is open source under the [MIT Licence](https://opensource.org/license/mit/) and available to fork or assist with development.
+
+## TODOs:
+Fix the window size, it doesn't need to be huge for an app with few elements in GUI.
+Add an element that displays the last flag time recorded.
+Allow the use of more keys to record flags.
+Add categories for different types of flags.
+Save key/category configurations in a profile.
+Fix build for MacOS (make is throwing a powershell error, cannot create full zip)
