@@ -10,8 +10,8 @@ if (require('electron-squirrel-startup')) {
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 1600,
-    height: 600,
+    width: 400,
+    height: 400,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
     },
@@ -90,9 +90,9 @@ async function saveFile() {
   let formatted_flags = formatFlags();
   let write_stream = fs.createWriteStream(file_obj.filePath);
   write_stream.write('Keylogs from ' + current_date + '\n');
-  formatted_flags.forEach((flag) => {
-    write_stream.write(flag + '\n');
-  })
+  for (let i = 1; i < formatted_flags.length; i++) {
+    write_stream.write(formatted_flags[i] + '\n');
+  }
   write_stream.close()
 }
 
